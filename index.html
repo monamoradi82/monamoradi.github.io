@@ -4,117 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mona Moradi</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-/* Reset & Global */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f5f7fa; color: #1f2937; scroll-behavior: smooth; }
-a { text-decoration: none; color: #0ea5e9; }
-a:hover { text-decoration: underline; }
-
-/* Navigation */
-nav { position: fixed; top:0; width: 100%; background: #0f172a; color: #fff; padding: 15px 20px; z-index: 1000; display: flex; justify-content: center; gap: 20px; font-weight: 500; }
-nav a { color: #fff; transition: color 0.3s; }
-nav a:hover { color: #0ea5e9; }
-
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background: linear-gradient(to right, #1e293b, #0ea5e9);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-}
-.hero img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #fff; margin-bottom: 20px; object-fit: cover; }
-.hero h1 { font-size: 3em; margin-bottom: 10px; }
-.hero p { font-size: 1.3em; color: #cbd5e1; }
-
-/* Sections */
-section { padding: 80px 20px; max-width: 1000px; margin: auto; }
-h2 { font-size: 2em; margin-bottom: 20px; border-bottom: 3px solid #0ea5e9; display: inline-block; padding-bottom: 5px; }
-
-/* Card Style */
-.card { background: #fff; padding: 25px; margin: 20px 0; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-ul { list-style-type: disc; margin-left: 20px; }
-
-/* Publications */
-.pub { margin-bottom: 15px; padding: 15px; background: #eef2ff; border-radius: 8px; }
-
-/* Footer */
-footer { background: #0f172a; color: #fff; text-align: center; padding: 20px; margin-top: 50px; }
-footer a { color: #0ea5e9; }
-</style>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
 
 <!-- Navigation -->
-<nav>
-  <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#honors">Honors</a>
-  <a href="#publications">Publications</a>
-  <a href="#projects">Projects</a>
-  <a href="#hobbies">Hobbies</a>
-  <a href="#contact">Contact</a>
+<nav class="fixed top-0 w-full bg-gray-900 text-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-center gap-6 p-4 font-semibold">
+    <a href="#about" class="hover:text-blue-400">About</a>
+    <a href="#education" class="hover:text-blue-400">Education</a>
+    <a href="#experience" class="hover:text-blue-400">Experience</a>
+    <a href="#skills" class="hover:text-blue-400">Skills</a>
+    <a href="#certifications" class="hover:text-blue-400">Certifications</a>
+    <a href="#honors" class="hover:text-blue-400">Honors</a>
+    <a href="#publications" class="hover:text-blue-400">Publications</a>
+    <a href="#projects" class="hover:text-blue-400">Projects</a>
+    <a href="#hobbies" class="hover:text-blue-400">Hobbies</a>
+    <a href="#contact" class="hover:text-blue-400">Contact</a>
+  </div>
 </nav>
 
-<!-- Hero Section -->
-<div class="hero">
-  <img src="https://via.placeholder.com/150" alt="Mona Moradi">
-  <h1>Mona Moradi</h1>
- </div>
+<!-- Hero -->
+<section class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-gray-800 via-blue-700 to-blue-400 text-white text-center px-6">
+  <img src="https://via.placeholder.com/150" alt="Mona Moradi" class="w-36 h-36 rounded-full border-4 border-white mb-6 object-cover">
+  <h1 class="text-4xl md:text-5xl font-bold mb-2">Mona Moradi</h1>
+</section>
 
 <!-- About -->
-<section id="about">
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      I am an AI Engineer specializing in Machine Learning, Edge AI, and IoT for digital healthcare. 
-      My work focuses on developing real-time, on-device intelligence for medical applications, improving latency, security, and scalability across distributed healthcare environments.
-    </p>
-    <p>
-      With over 10 years of experience in academia and industry, I bring expertise in computer engineering, computer architecture, and hardware design, including VLSI and nanoscale technologies. 
-      I enjoy working at the edge of emerging technologies, bridging advanced research with real-world applications.
-    </p>
-    <p>
-      Beyond research, I enjoy exploring new places and cultures. I am particularly fond of music, cooking, books, and new experiences. 
-      I am also an avid reader of historical and philosophical literature, continuously seeking new perspectives and insights.
-    </p>
+<section id="about" class="max-w-5xl mx-auto py-20 px-4">
+  <h2 class="text-3xl font-bold mb-6 border-b-4 border-blue-500 inline-block pb-2">About Me</h2>
+  <div class="bg-white rounded-lg shadow p-8 space-y-4">
+    <p>I am an AI Engineer specializing in Machine Learning, Edge AI, and IoT for digital healthcare. My work focuses on developing real-time, on-device intelligence for medical applications, improving latency, security, and scalability across distributed healthcare environments.</p>
+    <p>With over 10 years of experience in academia and industry, I bring expertise in computer engineering, computer architecture, and hardware design, including VLSI and nanoscale technologies. I enjoy working at the edge of emerging technologies, bridging advanced research with real-world applications.</p>
+    <p>Beyond research, I enjoy exploring new places and cultures. I am particularly fond of music, cooking, books, and new experiences. I am also an avid reader of historical and philosophical literature, continuously seeking new perspectives and insights.</p>
   </div>
 </section>
 
 <!-- Education -->
-<section id="education">
-  <h2>Education</h2>
-  <div class="card">
-    <h3>Ph.D. in Computer Engineering (Computer Architecture)</h3>
-    <p><strong>Institution:</strong> Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
-    <p><strong>Duration:</strong> Feb 2011 – Sep 2015</p>
-    <p><strong>Thesis:</strong> Designing Computational Circuits Based on Current Mode Multi-Valued Logic Using CNTFET Technology</p>
-    <p><strong>Funding:</strong> Presidential Nanotechnology Initiative, Iran / Iran Nanotechnology Innovation Council</p>
-  </div>
-  <div class="card">
-    <h3>Master of Science in Computer Engineering (Computer Architecture)</h3>
-    <p><strong>Institution:</strong> Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
-    <p><strong>Duration:</strong> Sep 2009 – Sep 2011</p>
-    <p><strong>Thesis:</strong> Advanced Single-Bit Full Adder Designs Using CNTFET Technology</p>
-    <p><strong>Funding:</strong> Presidential Nanotechnology Initiative, Iran / Iran Nanotechnology Innovation Council</p>
-  </div>
-  <div class="card">
-    <h3>Bachelor of Science in Computer Hardware Engineering</h3>
-    <p><strong>Institution:</strong> Islamic Azad University, Central Branch, Tehran, Iran</p>
-    <p><strong>Duration:</strong> Sep 2000 – Sep 2005</p>
+<section id="education" class="max-w-5xl mx-auto py-20 px-4">
+  <h2 class="text-3xl font-bold mb-6 border-b-4 border-blue-500 inline-block pb-2">Education</h2>
+  <div class="space-y-6">
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-xl font-semibold mb-1">Ph.D. in Computer Engineering (Computer Architecture)</h3>
+      <p><strong>Institution:</strong> Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
+      <p><strong>Duration:</strong> Feb 2011 – Sep 2015</p>
+      <p><strong>Thesis:</strong> Designing Computational Circuits Based on Current Mode Multi-Valued Logic Using CNTFET Technology</p>
+      <p><strong>Funding:</strong> Presidential Nanotechnology Initiative, Iran / Iran Nanotechnology Innovation Council</p>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-xl font-semibold mb-1">Master of Science in Computer Engineering (Computer Architecture)</h3>
+      <p><strong>Institution:</strong> Islamic Azad University, Science and Research Branch, Tehran, Iran</p>
+      <p><strong>Duration:</strong> Sep 2009 – Sep 2011</p>
+      <p><strong>Thesis:</strong> Advanced Single-Bit Full Adder Designs Using CNTFET Technology</p>
+      <p><strong>Funding:</strong> Presidential Nanotechnology Initiative, Iran / Iran Nanotechnology Innovation Council</p>
+    </div>
+    <div class="bg-white shadow rounded-lg p-6">
+      <h3 class="text-xl font-semibold mb-1">Bachelor of Science in Computer Hardware Engineering</h3>
+      <p><strong>Institution:</strong> Islamic Azad University, Central Branch, Tehran, Iran</p>
+      <p><strong>Duration:</strong> Sep 2000 – Sep 2005</p>
+    </div>
   </div>
 </section>
+
 
 <!-- Experience -->
 <section id="experience">
