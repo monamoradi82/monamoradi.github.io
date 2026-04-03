@@ -9,10 +9,9 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
+  background: #f8fafc;
 }
 
-/* Navbar */
 nav {
   position: fixed;
   width: 100%;
@@ -28,7 +27,6 @@ nav a {
   font-weight: bold;
 }
 
-/* Hero */
 .hero {
   height: 100vh;
   background: linear-gradient(to right, #1e293b, #0ea5e9);
@@ -38,10 +36,6 @@ nav a {
   align-items: center;
   flex-direction: column;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: 3em;
 }
 
 section {
@@ -56,10 +50,17 @@ h2 {
 }
 
 .card {
-  margin: 20px 0;
+  background: white;
   padding: 20px;
-  background: #f8fafc;
+  margin: 15px 0;
   border-radius: 10px;
+}
+
+.pub {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #eef2ff;
+  border-radius: 8px;
 }
 
 footer {
@@ -69,15 +70,12 @@ footer {
   padding: 20px;
 }
 </style>
-
 </head>
 
 <body>
 
 <nav>
   <a href="#about">About</a>
-  <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
   <a href="#publications">Publications</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -90,34 +88,41 @@ footer {
 <section id="about">
   <h2>About Me</h2>
   <div class="card">
-    Strategic researcher with expertise in AI, IoT, and advanced engineering. Experienced in Horizon Europe proposals and international collaborations.
+    Research Fellow at Scuola Superiore Sant’Anna with expertise in AI, IoT, and hardware security. Experienced in Horizon Europe proposals and international collaborations.
   </div>
-</section>
-
-<section id="education">
-  <h2>Education</h2>
-  <div class="card">PhD – Computer Engineering (2011–2015)</div>
-  <div class="card">MSc – Computer Engineering (2009–2011)</div>
-  <div class="card">BSc – Hardware Engineering (2000–2005)</div>
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="card">Research Fellow – Sant’Anna (2024–Present)</div>
-  <div class="card">Assistant Professor – IAU (2016–2024)</div>
 </section>
 
 <section id="publications">
   <h2>Publications</h2>
-  <div class="card">
-    IEEE • Springer • Heliyon • 20+ Papers
-  </div>
+
+  <div class="pub">1. On-Device AI for Voice-Driven Multi-Parameter Health-Risk Monitoring – IEEE PerCom 2026</div>
+  <div class="pub">2. Next-Generation Healthcare – IEEE ISCC 2025</div>
+  <div class="pub">3. Personalized Web Recommendation System – 2025</div>
+  <div class="pub">4. Post-quantum Healthcare – Heliyon 2024</div>
+  <div class="pub">5. Reversible Optical HNG Cell – 2022</div>
+  <div class="pub">6. PUF for IoT Security – Springer 2021</div>
+  <div class="pub">7. CNFET-Based Inexact Full Adder – 2021</div>
+  <div class="pub">8. CMOS Arbiter PUF – IEEE 2021</div>
+  <div class="pub">9. CNTFET Counters – 2018</div>
+  <div class="pub">10. High Performance Compressor Cell – 2018</div>
+  <div class="pub">11. Ternary Full Adders – 2018</div>
+  <div class="pub">12. Low Power Full Adders – 2018</div>
+  <div class="pub">13. PUF based on CNTFET – 2017</div>
+  <div class="pub">14. ASIP Processor Design – 2017</div>
+  <div class="pub">15. Ternary vs Binary Multiplication – 2016</div>
+  <div class="pub">16. Binary Multipliers CNTFET – 2016</div>
+  <div class="pub">17. Ternary Full Adder Circuits – 2016</div>
+  <div class="pub">18. Integrated Ternary Circuits – 2015</div>
+  <div class="pub">19. High-Speed Full Adder – 2012</div>
+  <div class="pub">20. Modified Full Adder Analysis – 2011</div>
+
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <div class="card">
-    Email: Mo.moradi90@gmail.com
+    📧 Mo.moradi90@gmail.com <br>
+    🔗 Google Scholar | ResearchGate | ORCID
   </div>
 </section>
 
